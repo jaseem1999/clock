@@ -19,31 +19,7 @@
             </div>
         </div>
     </section>
-    <script>
-        function clock(){
-            let hour = document.getElementById('hour');
-            let minute = document.getElementById('minute');
-            let seconds = document.getElementById('second');
-            let ampm = document.getElementById('ampm');
-
-            let h = new Date().getHours()
-            let m = new Date().getMinutes()
-            let s = new Date().getSeconds()
-              if (h > 12) {
-                  h = h - 12;
-                  var am = 'PM';
-              }
-            var am = 'AM' ;
-
-            hour.innerHTML = h;
-            minute.innerHTML = m;
-            second.innerHTML = s;
-            ampm.innerHTML = am;
-
-        }
-     var interval = setInterval(clock, 1000); 
-
-    </script>
+    <script src="scr.js" type="text/javascript"></script>
 
 </body>
 </html>
