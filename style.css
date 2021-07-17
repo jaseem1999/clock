@@ -57,7 +57,7 @@ section{
 @media (min-width: 650px) and (max-width: 750px) {
     .clock {
         position: relative;
-        width: 587px;
+        width: 620px;
         height: 200px;
     }
 }
