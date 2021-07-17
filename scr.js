@@ -11,7 +11,7 @@ function clock(){
                   h = h - 12;
                   var am = 'PM';
               }
-            var am = 'AM' ;
+            var am = '' ;
 
             hour.innerHTML = h;
             minute.innerHTML = m;
