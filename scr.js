@@ -19,6 +19,9 @@ function clock(){
                   h = h - 12;
                   var am = 'PM';
               }
+            if (12 == 12){
+                   h = 12;
+            }
               //Month
             if ( mo == 0){
                 mo = 'Jan'
