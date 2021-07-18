@@ -27,7 +27,7 @@ section{
 }
 .clock .container{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     height: 100%;
 }
@@ -54,10 +54,33 @@ section{
     font-size: 2em;
     font-weight: 700;
 }
+#day{
+    position: relative;
+    top: -24px;
+    left: -35px;
+    color: #dcc8c8;
+    font-size: 1em;
+    font-weight: 100;
+}
+#mon{
+    position: relative;
+    top: -5px;
+    left: -87px;
+    color: #0000A6;
+    font-size: 1em;
+    font-weight: 500;
+}
+#year{
+    position: relative;
+    top: 37px;
+    left: -119px;
+    color: whitesmoke;
+    font-size: 29px;
+}
 @media (min-width: 650px) and (max-width: 750px) {
     .clock {
         position: relative;
-        width: 620px;
+        width: 641px;
         height: 200px;
     }
 }
@@ -65,14 +88,30 @@ section{
     .clock {
         position: relative;
         width: 446px;
-        height: 109px;
+        height: 158px;
     }
     .clock .container h2 {
         font-size: 3rem;
     }
     #ampm{
-        top: -20px;
+        top: -34px;
         font-size: 1.5em;
+    }
+    .clock .container{
+        width: 130%;
+    }  
+    #day{
+        top: -14px;
+        left: -27px;
+    } 
+    #mon{
+        top: 3px;
+        left: -80px;
+    }
+    #year{
+        font-size: 1.5em;
+        top: 24px;
+        left:-109px;
     }
 }
 @media (min-width: 300px) and (max-width: 470px) {
@@ -85,24 +124,55 @@ section{
         font-size: 1.6rem;
     }
     #ampm{
-        top: -20px;
+        top: -28px;
+        font-size: 14px;
+    }
+    #day{
+        top: -11px;
+        left: -22px;
+        font-size: 11px;
+    } 
+    #mon{
+        top: 7px;
+        left: -58px;
+        font-size: 10px;
+    }
+    #year{
         font-size: 1.5em;
+        top: 33px;
+        left: -107px;
     }
 }
 @media screen and (max-width: 300px ){
     .clock {
         position: relative;
-        width: 225px;
-        height: 73px;
+        width: 248px;
+        height: 76px;
     }
     .clock .container h2 {
         font-size: 1.2rem;
     }
     #ampm{
-        top: -18px;
+        top: -25px;
+        left: -12px;
         font-size: 1.1em;
     }
     .clock .container h2:nth-child(odd){
-    margin: 0 4px;
-}
+        margin: 0 4px;
+    }
+    #day{
+        top: -6px;
+        left: -21px;
+        font-size: 11px;
+    } 
+    #mon{
+        top: 7px;
+        left: -58px;
+        font-size: 10px;
+    }
+    #year{
+        font-size: 17px;
+        top: 25px;
+        left: -107px;;
+    }
 }
