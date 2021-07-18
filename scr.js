@@ -15,7 +15,7 @@ function clock(){
             let y = new Date().getFullYear()
             var am = 'AM' ;
             //AM & PM
-              if (h > 12) {
+              if (h >= 12) {
                   h = h - 12;
                   var am = 'PM';
               }
